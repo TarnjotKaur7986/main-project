@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Order Page</title>
+</head>
+<body>
+    <header>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="SignIn.html">Order Here</a></li>
+      <li><a href="ContactUs.html">Contact</a></li>
+      <li><a href="AboutUs.html">About</a></li>
+    </ul>
+  </header>
+    <div class="container1">
+        <div class="order-box">
+            <h1>Place Your Order</h1>
+            <form class="order-form">
+                <label for="product">Select Product</label>
+                <select id="product" name="product">
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                <label for="shipping">Shipping Option</label>
+                <input type="radio" id="standard" name="shipping" value="standard" checked>
+                <label for="standard">Standard</label>
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express</label>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Responsive Website. All rights reserved.</p>
+      </footer>
+</body>
+</html>
